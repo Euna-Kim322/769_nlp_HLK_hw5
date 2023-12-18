@@ -1,0 +1,22 @@
+args: {'train': 'data/BLM_entity_train.csv', 'dev': 'data/BLM_entity_dev.csv', 'test': 'data/BLM_entity_test.csv', 'seed': 1234, 'epochs': 10, 'option': 'finetune', 'use_gpu': True, 'dev_out': 'dataout/BLM_entity_dev-output.txt', 'test_out': 'dataout/BLM_entity_test-output.txt', 'filepath': 'dataout/bert-model.pt', 'batch_size': 8, 'hidden_dropout_prob': 0.3, 'lr': 1e-05}
+load 622 data from data/BLM_entity_train.csv
+load 208 data from data/BLM_entity_dev.csv
+save the model to dataout/bert-model.pt
+epoch 0: train loss :: 1.791, train acc :: 0.296, dev acc :: 0.245
+epoch 1: train loss :: 1.723, train acc :: 0.296, dev acc :: 0.245
+save the model to dataout/bert-model.pt
+epoch 2: train loss :: 1.535, train acc :: 0.606, dev acc :: 0.529
+save the model to dataout/bert-model.pt
+epoch 3: train loss :: 1.100, train acc :: 0.759, dev acc :: 0.601
+epoch 4: train loss :: 0.864, train acc :: 0.841, dev acc :: 0.577
+epoch 5: train loss :: 0.575, train acc :: 0.907, dev acc :: 0.601
+epoch 6: train loss :: 0.410, train acc :: 0.913, dev acc :: 0.587
+save the model to dataout/bert-model.pt
+epoch 7: train loss :: 0.321, train acc :: 0.965, dev acc :: 0.620
+epoch 8: train loss :: 0.176, train acc :: 0.982, dev acc :: 0.558
+epoch 9: train loss :: 0.133, train acc :: 0.987, dev acc :: 0.562
+load model from dataout/bert-model.pt
+load 208 data from data/BLM_entity_dev.csv
+load 208 data from data/BLM_entity_test.csv
+dev acc :: 0.620
+test acc :: 0.620
